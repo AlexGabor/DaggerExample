@@ -18,10 +18,10 @@ val Fragment.injector
     get() = (requireActivity().application as DaggerExampleApplication).appComponent
 
 val AppCompatActivity.viewModelComponent
-    get() = injector.viewModelComponent().create()
+    get() = injector.viewModelComponent()
 
 val Fragment.viewModelComponent
-    get() = injector.viewModelComponent().create()
+    get() = injector.viewModelComponent()
 
 @Suppress("UNCHECKED_CAST")
 inline fun <reified VM : ViewModel> ComponentActivity.viewModels(

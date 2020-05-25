@@ -13,11 +13,6 @@ import dagger.Subcomponent
 @Subcomponent(modules = [AssistedModule::class])
 interface ViewModelComponent {
 
-    @Subcomponent.Factory
-    interface Factory {
-        fun create(): ViewModelComponent
-    }
-
     val example1ViewModel: Example1ViewModel
 
     val example2ViewModel: Example2ViewModel

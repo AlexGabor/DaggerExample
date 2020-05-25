@@ -14,5 +14,5 @@ interface AppComponent {
         fun create(@BindsInstance context: Context): AppComponent
     }
 
-    fun viewModelComponent(): ViewModelComponent.Factory
+    fun viewModelComponent(): ViewModelComponent
 }
